@@ -29,7 +29,7 @@ window.addEventListener("load", () => {
     };
 
     const addChallengeSubmitListener = () => {
-        challengeProduct.addEventListener("keypress", event => {
+        challengeProduct.addEventListener("keydown", event => {
             previousSection.textContent = event.code;
             if (event.code === "Enter") {
                 submitChallenge();

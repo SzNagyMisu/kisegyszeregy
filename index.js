@@ -30,6 +30,7 @@ window.addEventListener("load", () => {
 
     const addChallengeSubmitListener = () => {
         challengeProduct.addEventListener("keypress", event => {
+            previousSection.textContent = event.code;
             if (event.code === "Enter") {
                 submitChallenge();
             }

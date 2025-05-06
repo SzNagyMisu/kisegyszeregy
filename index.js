@@ -30,6 +30,7 @@ window.addEventListener("load", () => {
 
     const addChallengeSubmitListener = () => {
         challengeProduct.addEventListener("keydown", event => {
+            alert(event.code);
             previousSection.textContent = event.code;
             if (event.code === "Enter") {
                 submitChallenge();

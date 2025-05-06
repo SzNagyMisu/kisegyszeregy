@@ -30,13 +30,7 @@ window.addEventListener("load", () => {
 
     const addChallengeSubmitListener = () => {
         challengeProduct.addEventListener("keydown", event => {
-            previousSection.textContent = JSON.stringify({
-                code: event.code,
-                key: event.key,
-                charCode: event.charCode,
-                keyCode: event.keyCode,
-            });
-            if (event.code === "Enter") {
+            if (event.key === "Enter") {
                 submitChallenge();
             }
         });

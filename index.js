@@ -29,6 +29,7 @@ window.addEventListener("load", () => {
     };
 
     const addChallengeSubmitListener = () => {
+        previousSection.textContent += "adding submit listener\n";
         challengeProduct.addEventListener("keydown", event => {
             alert(event.code);
             previousSection.textContent = event.code;
@@ -36,6 +37,7 @@ window.addEventListener("load", () => {
                 submitChallenge();
             }
         });
+        previousSection.textContent += "added submit listener\n"
     };
 
     const submitChallenge = () => {

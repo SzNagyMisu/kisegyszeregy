@@ -1,0 +1,11 @@
+.hidden {
+    display: none;
+}
+
+#previous .right {
+    color: green;
+}
+
+#previous .wrong {
+    color: red;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Kisegyszeregy</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <h1>Kisegyszeregy</h1>
+        <section id="setup">
+            <label>
+                Válassz számot
+                <select id="setup--multiplicand">
+                    <option value="" disabled selected>-</option>
+                </select>
+            </label>
+        </section>
+        <section id="previous"></section>
+        <section id="challenge" class="hidden">
+            <span id="challenge--multiplicand"></span>
+            *
+            <span id="challenge--multiplier"></span>
+            =
+            <input type="number" id="challenge--product">
+        </section>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
+

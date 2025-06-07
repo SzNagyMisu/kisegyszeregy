@@ -2,10 +2,14 @@
     display: none;
 }
 
-#previous .right {
+section#previous article {
+    height: 18.5px;
+}
+
+section#previous .right {
     color: green;
 }
 
-#previous .wrong {
+section#previous .wrong {
     color: red;
 }
